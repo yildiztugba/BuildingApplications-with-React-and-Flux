@@ -12,6 +12,15 @@ class CoursesPage extends React.Component{
     }
     render(){
         return <h2>Courses</h2>
+        <table className="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author ID</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+        </table>
     }
 }
 export default CoursesPage;
