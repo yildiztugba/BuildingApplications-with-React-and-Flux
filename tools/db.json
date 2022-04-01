@@ -72,19 +72,11 @@
     },
     {
       "id": 11,
-      "slug": "tugba2",
-      "title": "tugba2",
-      "authorId": 2,
-      "category": "j",
-      "createdAt": 1648846743533
-    },
-    {
-      "id": 12,
-      "slug": "tugba3",
-      "title": "tugba3",
+      "slug": "cemal",
+      "title": "cemal",
       "authorId": 1,
-      "category": "e",
-      "createdAt": 1648846772937
+      "category": "dlmd",
+      "createdAt": 1648847277116
     }
   ],
   "authors": [

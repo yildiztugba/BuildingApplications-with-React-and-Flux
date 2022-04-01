@@ -2,7 +2,7 @@ import { func } from 'assert-plus';
 import React,{useState} from 'react';
 import CourseForm from './CourseForm';
 import * as courseApi from "../api/courseApi";
-import { props } from 'bluebird';
+import {toast} from "react-toastify";
 const ManageCoursePage = props => {
     const [course, setCourse] = useState ({
         id:null,
@@ -23,6 +23,7 @@ const ManageCoursePage = props => {
         event.preventDefault();
         courseApi.saveCourse(course).then(()=>{
             props.history.push("/courses");
+            toast.success("Course saved");
         });
     }
 return (
