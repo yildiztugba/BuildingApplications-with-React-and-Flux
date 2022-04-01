@@ -6,6 +6,9 @@ class CoursesPage extends React.Component{
         courses:[]
     };
 
+    componentDidMount(){
+      
+    }
     render(){
         return <h2>Courses</h2>
     }
