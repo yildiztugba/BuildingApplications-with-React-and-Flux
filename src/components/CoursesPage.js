@@ -5,7 +5,7 @@ function CoursesPage(){
 
     useEffect(()=>{
         getCourses().then(_courses => setCourses(_courses));
-    });
+    },[]);
 
     function renderRow(course){
         return (
