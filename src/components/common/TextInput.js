@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function TextInput (props){
     let wrapperClass = "form-group";
-    if (props.error && props.error.lenth > 0){
+    if (props.error.length > 0){
         wrapperClass += "has-error" ;
     }
     return(
@@ -32,6 +32,10 @@ TextInput.propTypes={
     onChange:PropTypes.func.isRequired,
     value: PropTypes.string,
     error:PropTypes.string
+};
+
+TextInput.defaultProps = {
+    error:""
 };
 
 export default TextInput;
