@@ -24,4 +24,14 @@ function TextInput (props){
 );
 }
 
+
+TextInput.propTypes={
+    id:PropTypes.string.isRequired,
+    name:PropTypes.string.isRequired,
+    label:PropTypes.string.isRequired,
+    onChange:PropTypes.func.isRequired,
+    value: PropTypes.string,
+    error:PropTypes.string
+};
+
 export default TextInput;
