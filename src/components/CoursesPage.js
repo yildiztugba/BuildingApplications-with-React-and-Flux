@@ -13,7 +13,7 @@ class CoursesPage extends React.Component{
 
     renderRow(course){
         return (
-            <tr>
+            <tr key={course.id}>
                 <td>{course.title}</td>
                 <td>{course.authorId}</td>
                 <td>{course.category}</td>
@@ -23,7 +23,7 @@ class CoursesPage extends React.Component{
 
 
     render(){
-        return 
+        return (
         <>
         <h2>Courses</h2>
         <table className="table">
@@ -39,6 +39,7 @@ class CoursesPage extends React.Component{
             </tbody>
         </table>
         </>
+        );
     }
 }
 export default CoursesPage;
