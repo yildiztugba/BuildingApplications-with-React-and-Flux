@@ -47,8 +47,7 @@ function CourseForm(props) {
   );
 }
 
-CourseList.propTypes={
- 
+CourseForm.propTypes= {
       course:PropTypes.object.isRequired,
       onSubmit:PropTypes.func.isRequired,
       onChange:PropTypes.func.isRequired,
