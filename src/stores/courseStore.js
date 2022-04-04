@@ -6,5 +6,7 @@ class courseStore extends EventEmitter{
         this.on("change", callback);
     }
 
-
+    removeChangeListener(callback){
+        this.removeListener("change", callback);
+    }
 }
