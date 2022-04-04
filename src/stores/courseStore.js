@@ -17,7 +17,7 @@ class CourseStore extends EventEmitter{
 }
 
 Dispatcher.register(action=> {
-    switch(action.actonTYpe){
+    switch(action.actionType){
         
     }
 })
