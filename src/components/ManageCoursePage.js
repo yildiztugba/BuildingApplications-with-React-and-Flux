@@ -3,6 +3,7 @@ import React,{useState,useEffect} from 'react';
 import CourseForm from './CourseForm';
 import * as courseApi from "../api/courseApi";
 import {toast} from "react-toastify";
+import * as courseActions from "../actions/courseActions";
 
 const ManageCoursePage = props => {
 
@@ -47,7 +48,7 @@ const ManageCoursePage = props => {
         event.preventDefault();
 
         if(!formIsValid()) return;
-        courseApi.saveCourse(course).then(()=>{
+        courseActions.saveCourse(course).then(()=>{
             props.history.push("/courses");
             toast.success("Course saved");
         });
