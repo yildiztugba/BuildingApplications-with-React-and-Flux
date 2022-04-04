@@ -1,7 +1,7 @@
 import { func } from 'assert-plus';
 import React,{useState,useEffect} from 'react';
 import CourseForm from './CourseForm';
-import * as courseApi from "../api/courseApi";
+import courseStore from '../stores/courseStore';
 import {toast} from "react-toastify";
 
 const ManageCoursePage = props => {
@@ -18,9 +18,7 @@ const ManageCoursePage = props => {
     useEffect(()=>{
         const slug= props.match.params.slug;
         if (slug){
-            courseApi.getCourseBySlug(slug).then(_course => {
-                 setCourse(_course)
-            }); 
+        setCourse(courseStore.getCourseBySLug(slug)); 
         }
     },
     [props.match.params.slug]);

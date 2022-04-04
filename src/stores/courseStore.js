@@ -16,6 +16,13 @@ class CourseStore extends EventEmitter{
     emitChange(){
         this.emit(CHANGE_EVENT);
     }
+    gitCourse(){
+        return _courses;
+    }
+
+    gitCourseBySlug(){
+        return _courses.find(course => course.slug === slug);
+    }
 }
 
 Dispatcher.register(action=> {
