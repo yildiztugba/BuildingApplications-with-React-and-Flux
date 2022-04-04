@@ -15,3 +15,5 @@ class CourseStore extends EventEmitter{
     }
 }
 
+const store = new CourseStore ();
+export default store;
