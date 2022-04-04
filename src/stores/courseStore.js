@@ -1,7 +1,7 @@
 import {EventEmitter} from 'events';
 
 const CHANGE_EVENT = "change";
-class courseStore extends EventEmitter{
+class CourseStore extends EventEmitter{
     addChangeListener(callback){
         this.on(CHANGE_EVENT, callback);
     }
@@ -14,3 +14,4 @@ class courseStore extends EventEmitter{
         this.emit(CHANGE_EVENT);
     }
 }
+
